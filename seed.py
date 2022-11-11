@@ -142,11 +142,40 @@ Pedigree.query.delete()
 # Add offers
 ped1 = Pedigree(title="Allentown", description="Purchased by Jim Payette and Stephen Fishler in 1987, the Allentowns only numbered 135 comics, but contained some of the highest graded copies of several key issues such as Detective Comics #27, Marvel Comics #1, Captain America #1 and Batman #1. The original owner had discovered his mother had saved his small collection when he found them in her closet. His acquaintance, a local antique dealer contacted six comic book dealers to place bids, with Payette and Fishler bidding the highest. Even though the comics do not exhibit any distinctive markings, nearly every copy has retained its provenance.", media="../static/images/pedigrees/allentown.jpg")
 
+ped2 = Pedigree(title="Aurora", description="In the fall of 1996 in Aurora, Colorado, a young man carrying a bag of comic books walked into Castaway Comics, owned by Dennis Grimm. It was the first of several bags that eventually accumulated into a large collection of over 2,000 comics - now known as the Aurora Collection. The collection came from the man's grandfather and covered many genres from the late '40s to the early '50s, with horror, western, crime, good-girl and science fiction being the most prominent genres. Most copies exhibit a distributor code written in grease pencil on the front cover.", media="../static/images/pedigrees/aurora.jpg")
+
+ped3 = Pedigree(title="Bethlehem", description="This massive collection of 18,000 comic books was assembled by Stanley Pachon in Bethlehem, PA, and stretched from 1950 into the Silver Age. It contained many popular 50's runs and a score of Marvel and DC keys. After Pachon passed away, the collection was sold to Joe Rainone and Phil Weiss in 1990. The Bethlehems were one of the first pedigreed collections to contain Silver Age, and many are easily identifiable by a store stamp found on the back covers.", media="../static/images/pedigrees/bethlehem.jpg")
+
+ped4 = Pedigree(title="Big Apple", description="The Big Apple collection is unique in a few ways. It was assembled by an African American named James Hilton and its span is huge, beginning in 1939 and continuing 30 years to the end of the Silver Age. Even though Hilton passed away in 1968, it wasn't until 1993 that his nephew Ron discovered the collection in the family home. A part of the collection was ultimately sold through Christie's Auction House between 1994 and 2000. The Golden Age portion of the collection has whiter paper, particularly from 1944, and they exhibit a distinctive pencil mark on the front covers.", media="../static/images/pedigrees/bigapple.jpg")
+
+ped5 = Pedigree(title="Billy Wrighte", description="One of the most recent Golden Age pedigrees recognized by CGC, it covers the 1936-1941 period numbering approximately 340 comics that included 67 #1 issues, an Action Comics #1 among them. Wright was nine years old when he started to amass his collection, passing away in 1994. His books were discovered in the basement after his wife also passed in 2011. Heritage auctioned the collection that same year, which sold for $3.4 million. Even though his name is written on a few covers, the collection does not have any distinctive markings.", media="../static/images/pedigrees/billywright.jpg")
+
+ped6 = Pedigree(title="Boston", description="Named for the city from which Bechara Maalouf hails, he unveiled a box of very high grade Silver Age books at a New York show in the '90s. An older couple began coming to the same show with similar boxes, who dealers realized was the source of Bechara's find. Mainly consisting of comics from 1964 to 1975, the Boston collection contained many duplicates, but did not exhibit any identifiable markings on the covers. Of note, the Fantastic Four #55 graded CGC 9.9, one of the few 9.9 grades assigned to a Silver Age comic book.", media="../static/images/pedigrees/boston.jpg")
+
+ped7 = Pedigree(title="Bowling Green", description="This collection originated from Bowling Green, Kentucky, and first surfaced for sale in the 1999 Sotheby's comic auction. It consisted of Marvel and DC issues spanning 1960-1980. Although some of the earlier issues were lower in grade, the condition improved considerably after 1964. Most copies exhibit a date stamp on the front cover.", media="../static/images/pedigrees/bowlinggreen.jpg")
+
+ped8 = Pedigree(title="Carson City", description="One of four Golden Age pedigrees to contain all #1 issues, the Carson City collection was amassed by a man who hoarded periodicals from his tobacco and candy store during the '40s and '50s, storing them between newspapers inside two storage sheds. After his passing, his wife sold the contents of the sheds to Mark Wilson and Ernie Gerber in the early '90s. The collection yielded impressive key issues such as Marvel Comics #1, All Select #1, Mystery Men #1, and 1939 New York World's Fair. Some copies exhibit a \"#1\" written on the front cover in pencil.", media="../static/images/pedigrees/carsoncity.jpg")
+
+ped9 = Pedigree(title="Central Valley", description="The origin of the Central Valley collection is unknown. A trucker bought the books in an estate sale in Northern California and flipped them to Brian Peets in 1993, who decided to keep the collection intact for 13 years. Containing nearly 400 comic books, the Central Valley collection exhibits fresh, white copies from the late '30s to the early '50s, including many high grade Superman and Batman titles. Once Peets decided to sell the collection, he had most of them CGC graded. Although some copies exhibit a date stamp, a store stamp or a penciled letter on the cover, the markings are not consistent.", media="../static/images/pedigrees/centralvalley.jpg")
+
+ped10 = Pedigree(title="Chicago", description="One of the oldest recognized pedigrees, the Chicago collection was purchased by Joe Sarno from the original owner in 1974. The most famous part of the collection includes near full runs of early Timely issues in high grade, which ultimately ended up in the hands of George Olshevsky, a well-known Timely historian. Olshevsy eventually sold his collection in 1988; prior to that he had meticulously penned a code number, date, and the condition of the book in the margin of an interior page of every issue, one way to identify a Timely Chicago copy. Many of these copies also have his initials penned on the last page.", media="../static/images/pedigrees/chicago.jpg")
+
+# TODO: continue entering these pedigrees
+
 
 
 # Add new messages to session, so they'll persist
 db.session.add(ped1)
-# db.session.add(ofr2)
-# db.session.add(ofr3)
+db.session.add(ped2)
+db.session.add(ped3)
+db.session.add(ped4)
+db.session.add(ped5)
+db.session.add(ped6)
+db.session.add(ped7)
+db.session.add(ped8)
+db.session.add(ped9)
+db.session.add(ped10)
+# db.session.add(ped2)
+# db.session.add(ped3)
 
 db.session.commit()
