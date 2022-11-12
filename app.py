@@ -11,7 +11,7 @@ from os import getenv
 # from flowershop import *
 import pdb
 
-from forms import EditComicsForm
+from forms import EditComicsForm, SubscriptionForm
 # from date_and_time_functions import *
 
 # from CRUD_psql import * 

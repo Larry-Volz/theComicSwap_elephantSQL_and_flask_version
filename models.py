@@ -257,6 +257,16 @@ class User(db.Model):
     nullable=False
     )
 
+    address1 = db.Column(db.String(200))
+
+    address2 = db.Column(db.String(200))
+
+    city = db.Column(db.String(200))
+
+    state = db.Column(db.String(22))
+
+    zip = db.Column(db.String(20))
+
     @classmethod
     def get_all_users(cls):
         return cls.query.all()

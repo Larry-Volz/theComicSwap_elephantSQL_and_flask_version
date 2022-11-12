@@ -15,7 +15,7 @@
 
 {% block content %}
 
-<h1>Join Our Community for:</h1>
+<h1>Join Our Super Community for:</h1>
 
 
 <section>
@@ -40,6 +40,107 @@
 <div class="col-md-6 mb-4 mt-4">
     <form>
       <!-- 2 column grid layout with text inputs for the first and last names -->
+
+      <!-- Newsletter Checkbox -->
+      <div class="form-check d-flex justify-content-center mb-4">
+        <input
+          class="form-check-input me-2"
+          type="checkbox"
+          value=""
+          id="subscribe_checkbox"
+          checked=""
+        />
+        <label class="form-check-label" for="form2Example3">
+          Subscribe to our newsletter
+        </label>
+      </div>
+
+       <!-- Join Checkbox -->
+       <div class="form-check d-flex justify-content-center mb-4">
+        <input
+          class="form-check-input me-2"
+          type="checkbox"
+          value=""
+          id="join_checkbox"
+          checked=""
+        />
+        <label class="form-check-label" for="form2Example3">
+          Join so you can trade books
+        </label>
+      </div>
+
+      <!-- ................................................................................... -->
+      <!-- First Name -->
+
+      <div class="row mb-4">
+        <div class="col">
+          <div class="form-outline">
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              class="form-control"
+              autocomplete="off"
+              />
+            <label
+              class="form-label"
+              for="fname"
+              style="margin-left: 0px"
+              >First Name</label
+            >
+            <div class="form-notch">
+              <div
+                class="form-notch-leading"
+                style="width: 9px"
+              ></div>
+              <div
+                class="form-notch-middle"
+                style="width: 68.8px"
+              ></div>
+              <div class="form-notch-trailing"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ................................................................................... -->
+      <!-- Last Name -->
+
+      <div class="row mb-4">
+        <div class="col">
+          <div class="form-outline">
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              class="form-control"
+              autocomplete="off"
+              />
+            <label
+              class="form-label"
+              for="lname"
+              style="margin-left: 0px"
+              >Last Name</label
+            >
+            <div class="form-notch">
+              <div
+                class="form-notch-leading"
+                style="width: 9px"
+              ></div>
+              <div
+                class="form-notch-middle"
+                style="width: 68.8px"
+              ></div>
+              <div class="form-notch-trailing"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ################################################################################## -->
+      <!-- User Name -->
       <div class="row mb-4">
         <div class="col">
           <div class="form-outline">
@@ -71,6 +172,8 @@
         </div>
 
       </div>
+
+      <hr>
 
       <!-- Email input -->
       <div class="form-outline mb-4">
@@ -139,18 +242,222 @@
         </div>
       </div>
 
-      <!-- Checkbox -->
-      <div class="form-check d-flex justify-content-center mb-4">
-        <input
-          class="form-check-input me-2"
-          type="checkbox"
-          value=""
-          id="form2Example3"
-          checked=""
-        />
-        <label class="form-check-label" for="form2Example3">
-          Subscribe to our newsletter
-        </label>
+      <hr>
+
+      <!-- ................................................................................... -->
+      <!-- Address 1 -->
+
+      <div class="row mb-4">
+        <div class="col">
+          <div class="form-outline">
+            <input
+              type="text"
+              id="address1"
+              name="address1"
+              class="form-control"
+              autocomplete="off"
+              />
+            <label
+              class="form-label"
+              for="address1"
+              style="margin-left: 0px"
+              >Address 1</label
+            >
+            <div class="form-notch">
+              <div
+                class="form-notch-leading"
+                style="width: 9px"
+              ></div>
+              <div
+                class="form-notch-middle"
+                style="width: 68.8px"
+              ></div>
+              <div class="form-notch-trailing"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ................................................................................... -->
+      <!-- Address 2 -->
+
+      <div class="row mb-4">
+        <div class="col">
+          <div class="form-outline">
+            <input
+              type="text"
+              id="address2"
+              name="address2"
+              class="form-control"
+              autocomplete="off"
+              />
+            <label
+              class="form-label"
+              for="address1"
+              style="margin-left: 0px"
+              >Address 2 (optional)</label
+            >
+            <div class="form-notch">
+              <div
+                class="form-notch-leading"
+                style="width: 9px"
+              ></div>
+              <div
+                class="form-notch-middle"
+                style="width: 68.8px"
+              ></div>
+              <div class="form-notch-trailing"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ................................................................................... -->
+      <!-- City -->
+
+      <div class="row mb-4">
+        <div class="col">
+          <div class="form-outline">
+            <input
+              type="text"
+              id="city"
+              name="city"
+              class="form-control"
+              autocomplete="off"
+              />
+            <label
+              class="form-label"
+              for="city"
+              style="margin-left: 0px"
+              >City</label
+            >
+            <div class="form-notch">
+              <div
+                class="form-notch-leading"
+                style="width: 9px"
+              ></div>
+              <div
+                class="form-notch-middle"
+                style="width: 68.8px"
+              ></div>
+              <div class="form-notch-trailing"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ................................................................................... -->
+      <!-- State -->
+
+      <div class="row mb-4">
+        <div class="col">
+          <div class="form-outline">
+            <select
+              id="state"
+              name="state"
+              class="form-control"
+              >
+                <label
+                class="form-label"
+                for="state"
+                style="margin-left: 0px"
+                >State</label
+                >
+                
+
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="DC">District Of Columbia</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VT">Vermont</option>
+                <option value="VA">Virginia</option>
+                <option value="WA">Washington</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WY">Wyoming</option>
+            </select>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ................................................................................... -->
+      <!-- Zip -->
+
+      <div class="row mb-4">
+        <div class="col">
+          <div class="form-outline">
+            <input
+              type="text"
+              id="zip"
+              name="zip"
+              class="form-control"
+              autocomplete="off"
+              />
+            <label
+              class="form-label"
+              for="zip"
+              style="margin-left: 0px"
+              >Zip</label
+            >
+            <div class="form-notch">
+              <div
+                class="form-notch-leading"
+                style="width: 9px"
+              ></div>
+              <div
+                class="form-notch-middle"
+                style="width: 68.8px"
+              ></div>
+              <div class="form-notch-trailing"></div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
       <!-- Submit button -->

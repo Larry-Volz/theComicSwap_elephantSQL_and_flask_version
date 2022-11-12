@@ -2,6 +2,8 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, FloatField, DateField, DateTimeField, IntegerField, StringField, TextAreaField, BooleanField
 from wtforms.validators import InputRequired, Optional, Email, NumberRange, AnyOf, URL
 
+
+
 class EditComicsForm(FlaskForm):
 
     owner = StringField("Owner's Name", 
@@ -9,7 +11,6 @@ class EditComicsForm(FlaskForm):
 
     title = StringField("Title of Comic", 
         validators = [InputRequired(message = "cannot be blank")])
-
 
     issuenumber = IntegerField("Issue Number")
 
@@ -29,7 +30,6 @@ class EditComicsForm(FlaskForm):
     assessed_source = StringField("Grading Source", 
         validators = [InputRequired(message = "cannot be blank")])
 
-
     email = StringField("Email", 
         validators = [Optional(), Email()])
 
@@ -39,18 +39,34 @@ class EditComicsForm(FlaskForm):
 
 
 
+class SubscriptionForm(FlaskForm):
+    fname = StringField("First Name", 
+        validators = [InputRequired(message = "cannot be blank")])
 
+    lname = StringField("Last Name", 
+        validators = [InputRequired(message = "cannot be blank")])
 
-    # yes_no = BooleanField("y/n") 
-    #form.yes_no.data = True or False
+    username = StringField("User Name", 
+        validators = [InputRequired(message = "cannot be blank")])
+    
+    email = StringField("Email", 
+        validators = [Optional(), Email()])
 
-    #states is a list → tuplize it: Id & descrip  same 
-    # state = SelectField("state", 
-        # choices = [(st, st) for st in states])     
+    password = StringField("Password", 
+        validators = [InputRequired(message = "cannot be blank")])
 
-    # category = RadioField("Category", 
-    #     [('ic','Ice Cream'), 
-    #     ('ch',"potato chips")]) # ul default format
+    address1 = StringField("Address", 
+        validators = [Optional()])
 
-    # dept_code = SelectField("Department Code")
-    # choice-tuples added later from postgresql
+    address2 = StringField("Address 2 (optional)", 
+        validators = [Optional()])
+
+    city = StringField("City)", 
+        validators = [Optional()])
+
+    state = StringField("State", 
+        validators = [Optional()])
+
+    zip = StringField("Zip code", 
+        validators = [Optional()])
+
